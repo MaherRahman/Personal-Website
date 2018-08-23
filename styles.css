@@ -97,11 +97,26 @@ sub {
 	bottom: -0.25em;
 }
 
-img {
+.slides img{
+  object-fit: fill;
+}
+
+.reason img {
 	display: block;
 	border: 0;
-	width: 100%;
-	height: auto;
+	width: 18em;
+  height: 15em;
+}
+
+.feature img{
+  display: block;
+  border: 0;
+  width: 22em;
+  height: 15em;
+}
+
+.story-wrapper img{
+  object-fit: fill;
 }
 
 svg:not(:root) {
