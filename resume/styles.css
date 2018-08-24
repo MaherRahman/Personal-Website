@@ -1,0 +1,182 @@
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: "Intro Rust", "Caveat", cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.66em;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+    color: #cc5500;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.content {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  max-height: 30em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header & Footer
+------------------------------------*/
+header, footer {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+header {
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+}
+
+header h1, header h2 {
+    color: #EDF2F4;
+    margin: 0;
+}
+
+/* Header styles only */
+.profile-img {
+  width: 35em;
+  border-radius: 50%;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Footer styles only */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-flex;
+}
+
+/* Navigation styles
+------------------------------------*/
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/* Education
+------------------------------------*/
+.education {
+    background: linear-gradient(rgba(141, 153, 174, 0.7), rgba(141, 153, 174, 0.5)),
+                url(https://wallpaper-house.com/data/out/5/wallpaper2you_43203.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+h3 ~ p{
+  margin-top: 1em;
+}
+
+/* Research And Projects
+------------------------------------*/
+.research {
+    background-color: #2980B9;
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+.job-description {
+  margin-bottom: 4em;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+
+}
+
+.Projects {
+    background: #6AC59C;
+}
+
+/* Media Queries
+----------------------------------*/
+@media (min-width: 800px) {
+  .column-narrow {
+    width: 30%;
+    float: left;
+  }
+
+  .column-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  .profile-img {
+    width: 200px;
+  }
+
+  nav a {
+    font-size: .5em;
+    padding: 7px 11px;
+  }
+}

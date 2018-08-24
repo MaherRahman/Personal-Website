@@ -1055,15 +1055,15 @@ Front page styles
     }
 }
 
-/* CTA */
+/* Button */
 
-.cta {
+.btn {
     padding: 3em;
     background: #B51C35;
     text-align: center;
 }
 
-.cta a {
+.btn a {
     padding: 0 .5em;
     font-size: 2em;
     font-weight: 900;
@@ -1073,14 +1073,14 @@ Front page styles
 }
 
 @media screen and (min-width: 40em) {
-    .cta a {
+    .btn a {
         font-size: 3em;
         border-width: 10px;
     }
 }
 
-.cta a:focus,
-.cta a:hover {
+.btn a:focus,
+.btn a:hover {
     background: #FFFCED;
     color: #B51C35;
 }
@@ -1211,7 +1211,7 @@ Footer styles
     content: "›";
 }
 
-.footer-cta a {
+.footer-btn a {
     display: block;
     margin-top: 1em;
     padding: 0 .5em;
@@ -1223,7 +1223,7 @@ Footer styles
     border: 5px solid #fffced;
 }
 
-.footer-cta a:focus,
-.footer-cta a:hover {
+.footer-btn a:focus,
+.footer-btn a:hover {
     background: #B51C35;
 }
