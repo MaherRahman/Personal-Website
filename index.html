@@ -10,6 +10,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
     <script src="JS/script.js"></script>
     <script src="JS/libs/flexibility.js"></script>
+    <script>
+        /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+        !function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+        grunticon(["gfx/icons.data.svg.css", "gfx/icons.data-800.png.css", "gfx/icons.fallback.css"], grunticon.svgLoadedCallback);
+    </script>
+    <noscript><link href="gfx/icons.fallback.css" rel="stylesheet"></noscript>
 
 <body>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -43,16 +49,16 @@
         <div class="front-slider flexslider">
             <ul class="slides">
                 <li>
-                    <img src="images/mainpromo/tower.jpg" />
+                    <img src="images/mainpromo/austin.jpg" alt = "" data-type = "showcase" />
                 </li>
                 <li>
-                    <img src="images/mainpromo/me.jpg" />
+                    <img src="images/mainpromo/austin2.jpg" alt = "" data-type = "showcase" />
                 </li>
                 <li>
-                    <img src="images/mainpromo/corgi.jpg" />
+                    <img src="images/mainpromo/tower-2000.png" alt = "" data-type = "showcase" />
                 </li>
                 <li>
-                    <img src="images/mainpromo/group.jpg" />
+                    <img src="images/mainpromo/corgi-2000.png" alt = "" data-type = "showcase" />
                 </li>
             </ul>
         </div><!-- .flexslider -->
@@ -80,7 +86,7 @@
             <div class="three-reasons centered">
                 <figure class="reason">
                     <a href="">
-                        <img src="images/experience/projects.jpg" />
+                        <img src="images/projects/projects-800.png" alt = "" data-type = "reason" />
                     </a>
                     <figcaption>
                         <h3 class="content-title">Recent Projects</h3>
@@ -90,7 +96,7 @@
                 </figure><!-- .reason -->
                 <figure class="reason">
                     <a href="">
-                        <img src="images/experience/Blog.jpg" />
+                        <img src="images/projects/Blog-800.png" alt = "" data-type = "reason" />
                     </a>
                     <figcaption>
                         <h3 class="content-title"> My Blog! </h3>
@@ -100,7 +106,7 @@
                 </figure><!-- .reason -->
                 <figure class="reason">
                     <a href="">
-                        <img src="images/experience/videos.jpg" />
+                        <img src="images/projects/videos-800.png" alt = "" data-type = "reason" />
                     </a>
                     <figcaption>
                         <h3 class="content-title"> Videos</h3>
@@ -123,7 +129,7 @@
         <section class="features centered">
             <figure class="feature">
                 <a href="#">
-                    <img src="images/mainpromo/corgi.jpg" />
+                    <img src="images/experience/corgi-800.png" alt = "" data-type = "feature" />
                 </a>
                 <figcaption>
                     <h3 class="content-title">Dogs!</h3>
@@ -133,7 +139,7 @@
             </figure><!-- .feature -->
             <figure class="feature">
                 <a href="#">
-                    <img src="images/experience/gaming.jpg" />
+                    <img src="images/experience/gaming-800.png" alt = "" data-type = "feature" />
                 </a>
                 <figcaption>
                     <h3 class="content-title">Video Games</h3>
@@ -143,7 +149,7 @@
             </figure><!-- .feature -->
             <figure class="feature">
                 <a href="#">
-                    <img src="images/experience/exercise.jpg" />
+                    <img src="images/experience/exercise-800.png" alt = "" data-type = "feature" />
                 </a>
                 <figcaption>
                     <h3 class="content-title">Exercise</h3>
@@ -153,7 +159,7 @@
             </figure><!-- .feature -->
             <figure class="feature">
                 <a href="#">
-                    <img src="images/experience/movies.jpg" />
+                    <img src="images/experience/movies-800.png" alt = "" data-type = "feature" />
                 </a>
                 <figcaption>
                     <h3 class="content-title">Movies</h3>
@@ -175,7 +181,7 @@
                 <ul class="slides">
                     <li>
                         <figure class="story-wrapper">
-                            <img src="images/mainpromo/tower.jpg" alt="">
+                            <img src="images/blog/tower-800.png" alt="" data-type = "story" >
                             <figcaption class="story">
                                 <h3 class="story-header">Untitled Blog Post</h3>
                                 <div class="author">Maher Rahman</div>
@@ -186,7 +192,7 @@
                     </li>
                     <li>
                  		 <figure class="story-wrapper">
-                            <img src="images/mainpromo/tower.jpg" alt="">
+                            <img src="images/blog/tower-800.png" alt="" data-type = "story" >
                             <figcaption class="story">
                                 <h3 class="story-header">Untitled Blog Post</h3>
                                 <div class="author">Maher Rahman</div>
@@ -198,7 +204,7 @@
                     </li>
                     <li>
                         <figure class="story-wrapper">
-                            <img src="images/mainpromo/tower.jpg" alt="">
+                            <img src="images/blog/tower-800.png" alt="" data-type = "story" >
                             <figcaption class="story">
                                 <h3 class="story-header">Untitled Blog Post</h3>
                                 <div class="author">Maher Rahman</div>
@@ -210,7 +216,7 @@
                     </li>
                     <li>
                         <figure class="story-wrapper">
-                            <img src="images/mainpromo/tower.jpg" alt="">
+                            <img src="images/blog/tower-800.png" alt="" data-type = "story" >
                             <figcaption class="story">
                                 <h3 class="story-header">Untitled Blog Post</h3>
                                 <div class="author">Maher Rahman</div>
@@ -254,6 +260,15 @@
                 </address>
             </div><!-- .widget -->
         </section><!-- .footer-widgets -->
+    <nav class="social-nav" role="navigation">
+            <ul>
+                <li><a class="icon-linkedin" data-grunticon-embed href="https://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                <li><a class="icon-twitter" data-grunticon-embed href="https://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                <li><a class="icon-facebook" data-grunticon-embed href="https://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                <li><a class="icon-instagram" data-grunticon-embed href="https://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                <li><a class="icon-youtube" data-grunticon-embed href="https://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+            </ul>
+        </nav><!-- .social-nav -->
     </footer><!-- .footer -->
 
     <script src="JS/libs/jquery-2.1.3.min.js"></script>
